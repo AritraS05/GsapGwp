@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import React from 'react'
 
 import { ScrollTrigger } from 'gsap/all'
+import AnimatedTitle from './AnimatedTitle'
 gsap.registerPlugin(ScrollTrigger)
 const About = () => {
   useGSAP(()=>{
@@ -27,12 +28,13 @@ const About = () => {
   return (
     <div id='about' className='min-h-screen w-screen'>
         <div className='relative mb-8 mt-36 flex flex-col items-center gap-5'>
-                <h2 className='font-general text-sm uppercase md:text-[10px]'>
-                    We<b>l</b>come to Aritra's Gaming Metaverse
+                <h2 className='font-general text-xl uppercase md:text-[18px]'>
+                    We<b>l</b>come to Aritra's Metaverse
                 </h2>
-                <div className='mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]'>
-                    Disc<b>o</b>ver the new<br />series of Ad<b>v</b>entur<b>e</b>s
-                </div>
+
+                <AnimatedTitle  title="Disc<b>o</b>ver the new series of Ad<b>v</b>entur<b>e</b>s"  containerClass="mt-5 !text-black text-center" />
+
+                
 
                 <div className='about-subtext'>
                     <p>
